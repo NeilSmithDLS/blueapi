@@ -72,7 +72,7 @@ class SessionCacheManager(CacheManager):
         assert self._token_path
         try:
             Path(self._token_path.parent).mkdir(parents=True, exist_ok=True)
-            os.chmod(self._token_path.parent, 0o600)
+            os.chmod(self._token_path.parent, 0o777)
             self._token_path.write_text("")
         except IsADirectoryError:
             print("Invalid path: a directory path was provided instead of a file path")
