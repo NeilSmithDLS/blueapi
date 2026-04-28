@@ -5,7 +5,7 @@
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
   # -- To use a container image that extends the blueapi one, set it here
-  repository: ghcr.io/diamondlightsource/blueapi
+  repository: ghcr.io/neilsmithdls/blueapi
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
